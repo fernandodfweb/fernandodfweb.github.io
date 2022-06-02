@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+body {
+  font-family: Quicksand;
+  font-size: 14px;
+  /* background: linear-gradient(180deg, rgb(245, 238, 155), orange); */
+  background: url("/img/bg_home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+h1 {
+  font-size: 60px;
+  color: rgba(185, 24, 24);
+  text-align: center;
+  font-family: road;
+}
+@font-face {
+  font-family: iron;
+  src: url("/fonts/maiden.ttf");
+}
+@font-face {
+  font-family: road;
+  src: url("/fonts/Road_Rage.otf");
+}
+
+hr {
+  width: 80%;
+  height: 15px;
+  background: orange;
+}
+p {
+  padding-bottom: 15px;
+}
+button {
+  padding: 5px 10px;
+  background: rgb(23, 23, 23);
+  color: aliceblue;
+  transition: 0.6s;
+}
+button:hover {
+  background: orangered;
+  font-weight: 200;
+}
+
+.texto {
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+}
+.center {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+#prai {
+  width: 80%;
+  height: auto;
+  border: 0px;
+  display: block;
+  margin: 0 auto;
+}
+.videopraia {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.buttonVideo {
+  text-align: center;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background: black;
+  padding: 10px 0;
+  z-index: 111;
+}
+#paragrafos {
+  display: flex;
+  flex-wrap: wrap;
+}

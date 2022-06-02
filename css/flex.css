@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 900px; */
+  height: 900px;
+  background: #fbfbc1;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex div {
+  flex-grow: 0;
+  flex-basis: 100px;
+  background: red;
+  color: aliceblue;
+  border: 1px solid black;
+}
+
+.flex div:nth-child(odd) {
+  background: rgb(208, 255, 0);
+}
