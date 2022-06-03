@@ -5,42 +5,83 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-
-  <title>segundo commit</title>
+  <link rel="stylesheet" href="/css/semantica.css">
+  <title>Semãntica css</title>
 </head>
 
 <body>
-  <h1>Título do site</h1>
-  <hr>
-  <audio src="mp3/som001.mp3" controls class="center"></audio>
-  <div id="paragrafos">
-    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis fuga nulla beatae quos nam. Provident hic assumenda voluptatem at in reiciendis quibusdam modi totam non deleniti. Excepturi nobis saepe aliquid?
-      Qui, saepe earum et, necessitatibus totam illo quo dignissimos voluptates obcaecati fuga veritatis, minus provident tenetur incidunt omnis ipsam. Fugit minus ea mollitia reiciendis atque aliquam dolore! Nostrum, ad tempore.
-      Molestias ipsa fugiat iusto, impedit voluptas, dolores quaerat, repellendus nihil cupiditate pariatur deleniti iure numquam adipisci? Maiores quaerat suscipit mollitia! Ullam neque laborum id ipsum totam laboriosam fugit corporis quod.</p>
+  <main>
+    <header>
+      <a href="#">
+        <img src="/img/logo.svg" alt="">
+      </a>
 
-    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis fuga nulla beatae quos nam. Provident hic assumenda voluptatem at in reiciendis quibusdam modi totam non deleniti. Excepturi nobis saepe aliquid?
-      Qui, saepe earum et, necessitatibus totam illo quo dignissimos voluptates obcaecati fuga veritatis, minus provident tenetur incidunt omnis ipsam. Fugit minus ea mollitia reiciendis atque aliquam dolore! Nostrum, ad tempore.
-      Molestias ipsa fugiat iusto, impedit voluptas, dolores quaerat, repellendus nihil cupiditate pariatur deleniti iure numquam adipisci? Maiores quaerat suscipit mollitia! Ullam neque laborum id ipsum totam laboriosam fugit corporis quod.</p>
-  </div>
-  <hr>
-  <img class="center""praia" src="img/img01.jpg" alt="Imagem 01">
-  <hr>
-  <video class="videopraia">
-    <source src="videos/ocean001.mp4">
-  </video>
-  <div class="buttonVideo">
-    <button onclick="play()">Play</button>
-    <button onclick="pause()">Pouse</button>
-    <button onclick="stop()">Stop</button>
-    <button onclick="dec()">-</button>
-    <button onclick="inc()">+</button>
-    <button onclick="retroceder()">Retroceder</button>
-    <button onclick="avancar()">Avençar</button>
-  </div>
-  <hr>
-  <script src="js/script.js"></script>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#">Localização</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class=" box">
+      <h1>Conhecimentos necessários</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a consectetur, iure excepturi mollitia recusandae facere quidem sit saepe iusto laborum reprehenderit quas consequatur quibusdam ipsam error velit placeat quisquam.</p>
+      <span>Assistente comercial</span>
+    </div>
+    <div class="box">
+      <h1>Conhecimentos necessários</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a consectetur, iure excepturi mollitia recusandae facere quidem sit saepe iusto laborum reprehenderit quas consequatur quibusdam ipsam error velit placeat quisquam.</p>
+      <span>Assistente de RH</span>
+    </div>
+    <div class="box">
+      <h1>Conhecimentos necessários</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a consectetur, iure excepturi mollitia recusandae facere quidem sit saepe iusto laborum reprehenderit quas consequatur quibusdam ipsam error velit placeat quisquam.</p>
+      <span>Assistente de RH</span>
+    </div>
+    <div class="box">
+      <h1>Conhecimentos necessários</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a consectetur, iure excepturi mollitia recusandae facere quidem sit saepe iusto laborum reprehenderit quas consequatur quibusdam ipsam error velit placeat quisquam.</p>
+      <span>Assistente de RH</span>
+    </div>
+    <div id="produtos""></div>
+    <div  class=" box">
+      <h1>Conhecimentos necessários</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a consectetur, iure excepturi mollitia recusandae facere quidem sit saepe iusto laborum reprehenderit quas consequatur quibusdam ipsam error velit placeat quisquam.</p>
+      <span>Produtos</span>
+    </div>
+    <div class="box">
+      <h1>Conhecimentos necessários</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a consectetur, iure excepturi mollitia recusandae facere quidem sit saepe iusto laborum reprehenderit quas consequatur quibusdam ipsam error velit placeat quisquam.</p>
+      <span>Assistente de RH</span>
+    </div>
+    <div class="box">
+      <h1>Conhecimentos necessários</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a consectetur, iure excepturi mollitia recusandae facere quidem sit saepe iusto laborum reprehenderit quas consequatur quibusdam ipsam error velit placeat quisquam.</p>
+      <span>Assistente de RH</span>
+    </div>
+    <section id="cards">
+      <div class="grid">
+        <div class="item">
+          <h2>Bicicleta 1 </h2>
+          <P>Bicicleta com modelo com motor eletrico.</P>
+        </div>
+        <div class="item">
+          <h2>Bicicleta 2 </h2>
+          <P>Bicicleta totalmete eletrica suspensão digital.</P>
+        </div>
+        <div class="item">
+          <h2>Bicicleta 3 </h2>
+          <P>Bicicleta totalmete eletrica suspensão digital.</P>
+        </div>
+
+      </div>
+    </section>
+    <footer></footer>
+  </main>
 </body>
 
 </html>
