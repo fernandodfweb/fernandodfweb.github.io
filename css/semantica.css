@@ -70,6 +70,12 @@ nav ul li a {
 nav ul li a:hover {
   opacity: 0.5;
 }
+.contato {
+  width: 800px;
+  border: 1px solid white;
+  margin: 40px auto;
+  position: relative;
+}
 .box {
   width: 950px;
   border: rgb(66, 66, 66) solid 1px;
