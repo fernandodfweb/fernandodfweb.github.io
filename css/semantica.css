@@ -69,22 +69,53 @@ nav ul li a {
 nav ul li a:hover {
   opacity: 0.5;
 }
-.contato h1 {
-  font-size: 22px;
-  margin-bottom: 20px;
+
+/* ------------------------------ CONTATO ----------------------- */
+.left img {
+  max-height: 500px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid rgb(204, 249, 3); */
+}
+
+.right,
+.left {
+  /* max-width: 500px; */
+  /* border: 2px solid rgb(204, 249, 3); */
+}
+h1 {
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin: 0 auto;
+  display: block;
+  color: #f8f7f4;
 }
 .contato {
-  width: 400px;
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
   /* border: 1px solid white; */
-  margin: 40px auto;
-  position: relative;
   color: rgba(255, 255, 255, 0.646);
+  align-content: center;
+  justify-content: center;
 }
-.contato label {
+form {
+  max-width: 500px;
+}
+form span {
+  font-weight: 700;
+}
+form label {
+  font-weight: 700;
   /* margin-bottom: 20px;
   padding-bottom: 30px; */
 }
-.contato input {
+form input {
   width: 100%;
   background: #360149;
   padding: 5px;
@@ -93,7 +124,11 @@ nav ul li a:hover {
   margin: 5px 0px 10px 0px;
   color: #f8f7f4;
 }
-.contato textarea {
+form input[type="radio"] {
+  background: #240131;
+  border: 1px solid #f6f3f7;
+}
+form textarea {
   width: 100%;
   min-height: 100px;
   background: #360149;
@@ -104,7 +139,7 @@ nav ul li a:hover {
   color: #f8f7f4;
   resize: none;
 }
-.contato select {
+form select {
   /* width: 100%; */
   background: #360149;
   padding: 5px;
@@ -112,16 +147,23 @@ nav ul li a:hover {
   margin: 5px 0px 10px 0px;
   color: #f8f7f4;
 }
-.contato button {
+form button {
   /* min-width: 300px; */
   width: 100px;
   color: #febe01;
   background: #8b078d;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid #23002f;
   border-radius: 5px;
   margin-bottom: 10px;
   font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button:hover {
+  background: #23002f;
+  color: #f8f7f4;
+  transform: scale(1.2) translate(1%, 1%);
 }
 .genero {
   display: flex;
@@ -136,7 +178,7 @@ nav ul li a:hover {
 /* .contato span {
   margin-bottom: 310px;
 } */
-
+/* ------------------------------ FIM CONTATO ----------------------- */
 .box {
   width: 950px;
   border: rgb(66, 66, 66) solid 1px;

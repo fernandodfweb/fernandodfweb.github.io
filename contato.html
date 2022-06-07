@@ -19,64 +19,74 @@
 
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a href="#">Quem Somos</a></li>
           <li><a href="#produtos">Produtos</a></li>
           <li><a href="#">Localização</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="/contato.html">Contato</a></li>
         </ul>
       </nav>
     </header>
 
+    <h1>Formulário de contato</h1>
     <div class="contato">
-      <h1>Formulário de contato</h1>
-      <form action="" method="get">
-        <div>
-          <label for="nome">Nome:</label>
-          <div>
-            <input type="text" name="nome" id="nome" placeholder="informe o seu nome " required>
-          </div>
-          <label for="telefone">Telefone:</label>
-          <div>
-            <input type="tel" name="telefone" id="telefone" placeholder="informe sei telefone " required>
-          </div>
-          <label for="email">Email</label>
-          <div>
-            <input type="email" name="email" id="email" placeholder="informe seu e-mail " required>
-          </div>
-          <!-- ------- radio ---- -->
-          <span>Genero:</span>
-          <div class="genero">
-            <input type="radio" name="genero" id="m" value="m">
-            <label for="m">M</label>
-            <input type="radio" name="genero" id="f" value="f">
-            <label for="m">F</label>
-            <input type="radio" name="genero" id="o" value="o">
-            <label for="m">Outros</label>
-          </div>
-          <!-- ---- fim radio ---- -->
 
-          <span>Estados:</span>
-          <div>
-            <select name="estado" id="estado" aria-label="Default select example" required>
-              <option selected value="">Selecione seu Estados</option>
-              <option value="ba">Bahia</option>
-              <option value="se">Sergipe</option>
-              <option value="al">Alagoas</option>
-            </select>
-          </div>
-          <label for="cidade">Cidade:</label>
-          <div>
-            <input type="text" name="cidade" id="cidade" placeholder="informe sua cidade " required>
-          </div>
+      <div class="left">
+        <img src="/img/img-animate-form.svg" alt="">
+      </div>
+      <div class="right">
 
-          <label>Mensagem:</label>
+        <form action="https://formsubmit.co/fernandodfweb@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+          <input type="hidden" name="_template" value="table">
           <div>
-            <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui a sua mensagem"></textarea>
+            <label for="nome">Nome:</label>
+            <div>
+              <input type="text" name="nome" id="nome" placeholder="informe o seu nome " required>
+            </div>
+            <label for="telefone">Telefone:</label>
+            <div>
+              <input type="tel" name="telefone" id="telefone" placeholder="informe sei telefone " required>
+            </div>
+            <label for="email">Email</label>
+            <div>
+              <input type="email" name="email" id="email" placeholder="informe seu e-mail " required>
+            </div>
+            <!-- ------- radio ---- -->
+            <span>Genero:</span>
+            <div class="genero">
+              <input type="radio" name="genero" id="m" value="m">
+              <label for="m">M</label>
+              <input type="radio" name="genero" id="f" value="f">
+              <label for="m">F</label>
+              <input type="radio" name="genero" id="o" value="o">
+              <label for="m">Outros</label>
+            </div>
+            <!-- ---- fim radio ---- -->
+
+            <span>Estados:</span>
+            <div>
+              <select name="estado" id="estado" aria-label="Default select example" required>
+                <option selected value="">Selecione seu Estados</option>
+                <option value="ba">Bahia</option>
+                <option value="se">Sergipe</option>
+                <option value="al">Alagoas</option>
+              </select>
+            </div>
+            <label for="cidade">Cidade:</label>
+            <div>
+              <input type="text" name="cidade" id="cidade" placeholder="informe sua cidade " required>
+            </div>
+
+            <label>Mensagem:</label>
+            <div>
+              <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui a sua mensagem"></textarea>
+            </div>
           </div>
-        </div>
-        <button type="submit" value="enviar">Enviar</button>
-      </form>
+          <button type="submit" value="enviar">Enviar</button>
+        </form>
+      </div>
     </div>
 
     <footer></footer>
