@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/semantica.css">
+
   <title>Curso Full Stack - Senac</title>
 </head>
 
@@ -29,26 +30,52 @@
 
     <div class="contato">
       <h1>Formulário de contato</h1>
-      <form>
+      <form action="" method="get">
         <div>
-          <label>Nome:</label>
+          <label for="nome">Nome:</label>
           <div>
-            <input type="text" name="nome" placeholder="informe o ">
+            <input type="text" name="nome" id="nome" placeholder="informe o seu nome " required>
           </div>
-          <label>Telefone:</label>
+          <label for="telefone">Telefone:</label>
           <div>
-            <input type="tel" name="telefone" placeholder="informe o ">
+            <input type="tel" name="telefone" id="telefone" placeholder="informe sei telefone " required>
           </div>
-          <label>Email</label>
+          <label for="email">Email</label>
           <div>
-            <input type="email" name="email" placeholder="informe o ">
+            <input type="email" name="email" id="email" placeholder="informe seu e-mail " required>
           </div>
+          <!-- ------- radio ---- -->
+          <span>Genero:</span>
+          <div class="genero">
+            <input type="radio" name="genero" id="m" value="m">
+            <label for="m">M</label>
+            <input type="radio" name="genero" id="f" value="f">
+            <label for="m">F</label>
+            <input type="radio" name="genero" id="o" value="o">
+            <label for="m">Outros</label>
+          </div>
+          <!-- ---- fim radio ---- -->
+
+          <span>Estados:</span>
+          <div>
+            <select name="estado" id="estado" aria-label="Default select example" required>
+              <option selected value="">Selecione seu Estados</option>
+              <option value="ba">Bahia</option>
+              <option value="se">Sergipe</option>
+              <option value="al">Alagoas</option>
+            </select>
+          </div>
+          <label for="cidade">Cidade:</label>
+          <div>
+            <input type="text" name="cidade" id="cidade" placeholder="informe sua cidade " required>
+          </div>
+
           <label>Mensagem:</label>
           <div>
-            <input type="text" name="" placeholder="informe o ">
+            <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui a sua mensagem"></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" value="enviar">Enviar</button>
       </form>
     </div>
 

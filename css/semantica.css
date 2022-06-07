@@ -28,7 +28,7 @@ header {
   position: fixed;
   z-index: 999;
   top: 0px;
-  background: #bb01fe;
+  /* background: #bb01fe; */
   margin: 0px;
   padding: 0px;
 }
@@ -50,10 +50,8 @@ nav {
 }
 nav ul {
   background: linear-gradient(90deg, #00000000, rgb(1, 0, 1));
-
   display: flex;
   gap: 20px;
-
   list-style: none;
   align-items: flex-end;
   margin-top: 50px;
@@ -61,6 +59,7 @@ nav ul {
   justify-content: flex-end;
   padding: 10px 40px 10px 0;
 }
+
 nav ul li a {
   color: white;
   font-size: 16px;
@@ -70,12 +69,74 @@ nav ul li a {
 nav ul li a:hover {
   opacity: 0.5;
 }
+.contato h1 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
 .contato {
-  width: 800px;
-  border: 1px solid white;
+  width: 400px;
+  /* border: 1px solid white; */
   margin: 40px auto;
   position: relative;
+  color: rgba(255, 255, 255, 0.646);
 }
+.contato label {
+  /* margin-bottom: 20px;
+  padding-bottom: 30px; */
+}
+.contato input {
+  width: 100%;
+  background: #360149;
+  padding: 5px;
+  border: 1px solid #23002f;
+  border-radius: 5px;
+  margin: 5px 0px 10px 0px;
+  color: #f8f7f4;
+}
+.contato textarea {
+  width: 100%;
+  min-height: 100px;
+  background: #360149;
+  padding: 5px;
+  border: 1px solid #23002f;
+  border-radius: 5px;
+  margin: 5px 0px 10px 0px;
+  color: #f8f7f4;
+  resize: none;
+}
+.contato select {
+  /* width: 100%; */
+  background: #360149;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0px 10px 0px;
+  color: #f8f7f4;
+}
+.contato button {
+  /* min-width: 300px; */
+  width: 100px;
+  color: #febe01;
+  background: #8b078d;
+  padding: 5px;
+  border: 1px solid #23002f;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.genero {
+  display: flex;
+  justify-content: start;
+  margin: 10px 0px;
+}
+
+.genero input {
+  width: auto;
+  margin: 0 10px;
+}
+/* .contato span {
+  margin-bottom: 310px;
+} */
+
 .box {
   width: 950px;
   border: rgb(66, 66, 66) solid 1px;
