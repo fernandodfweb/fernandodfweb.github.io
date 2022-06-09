@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/exercicio-form.css">
+  <title>Exercicio formulário</title>
+</head>
+
+<body>
+
+  <div class="form-doacao">
+    <h1>Doação</h1>
+    <form action="https://formsubmit.co/fernandodfweb@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado2.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="Contato do curso full Stack">
+
+
+      <label for="nome">nome</label>
+      <input type="text" name="nome" id="nome" placeholder="informe o ..." required>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="informeseu e-mail" required>
+      <label for="data">Data</label>
+      <input type="date" name="data" id="data" placeholder="informe a data" required>
+      <label for="telefone">Telefone</label>
+      <input type="tel" name="tel" id="tel" placeholder="informe o teleforn" required>
+      <label for="comprovante">Comprovante</label>
+      <input type="file" name="arquivo" id="arquivo" accept=".pdf, .jpg, .gif" placeholder="Adicione aqui seu curriculo " required>
+      <!-- ------- radio ---- -->
+      <span>Tipo de pessoa:</span>
+      <div class="pessoa">
+        <input type="radio" name="pessoa" id="fisica" value="fisica">
+        <label for="m">fisica</label>
+        <input type="radio" name="pessoa" id="juridica" value="juridica">
+        <label for="m">juridica</label>
+      </div>
+      <!-- ---- fim radio ---- -->
+      <button type="submit" value="Enviar">Enviar</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

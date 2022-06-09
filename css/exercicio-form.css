@@ -1,0 +1,124 @@
+body {
+  background: linear-gradient(180deg, rgb(2, 237, 249), rgb(67, 4, 148));
+  background-attachment: fixed;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 3rem;
+  color: #23002f;
+}
+.form-doacao {
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+form span {
+  font-weight: 700;
+}
+form label {
+  font-weight: 700;
+  color: rgb(67, 4, 148);
+}
+form input {
+  width: 100%;
+  background: #320385;
+  padding: 5px;
+  border: 1px solid #23002f;
+  border-radius: 5px;
+  margin: 5px 0px 10px 0px;
+  color: #f8f7f4;
+}
+form input[type="radio"] {
+  background: #240131;
+  border: 1px solid #f6f3f7;
+}
+form textarea {
+  width: 100%;
+  min-height: 100px;
+  background: #360149;
+  padding: 5px;
+  border: 1px solid #23002f;
+  border-radius: 5px;
+  margin: 5px 0px 10px 0px;
+  color: #f8f7f4;
+  resize: none;
+}
+form select {
+  /* width: 100%; */
+  background: #360149;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0px 10px 0px;
+  color: #f8f7f4;
+}
+form button {
+  /* min-width: 300px; */
+  width: 100px;
+  color: #febe01;
+  background: #8b078d;
+  padding: 10px;
+  border: 1px solid #23002f;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button:hover {
+  background: #23002f;
+  color: #f8f7f4;
+  transform: scale(1.2) translate(1%, 1%);
+}
+.pessoa {
+  display: flex;
+  justify-content: start;
+  margin: 10px 0px;
+}
+
+.pessoa input {
+  width: auto;
+  margin: 0 10px;
+}
+/* .form-doacao span {
+  margin-bottom: 310px;
+} */
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .form-doacao {
+    width: 90%;
+    grid-template-columns: 1fr;
+    border: 1px solid white;
+  }
+  form {
+    width: 800px;
+    border: 1px solid rgb(229, 249, 2);
+    /* margin: 0 auto;
+    text-align: left; */
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1024px) {
+  .form-doacao {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 833px) {
+  .form-doacao {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .left img {
+    display: none;
+  }
+}
